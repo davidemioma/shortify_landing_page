@@ -229,6 +229,11 @@ p {
   padding-bottom: 10rem;
 }
 
+.input-and-result {
+  position: relative;
+  transform: translateY(-25%);
+}
+
 .input_group {
   overflow: hidden;
   display: grid;
@@ -236,8 +241,6 @@ p {
   padding: 2.5rem;
   background-color: hsl(257, 27%, 26%);
   border-radius: 10px;
-  position: relative;
-  transform: translateY(-50%);
 }
 
 .i_right {
@@ -259,6 +262,47 @@ p {
   background: hsl(180, 66%, 49%);
   color: #fff;
   text-align: center;
+}
+
+.results {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem 0;
+}
+
+.result {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.new {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.old-link {
+  color: black;
+}
+
+.new-link {
+  color: hsl(180, 66%, 49%);
+}
+
+.copy {
+  width: 100px;
+  padding: 1rem;
+  background: hsl(180, 66%, 49%);
+  color: #fff;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 30px;
+  outline: 0;
+}
+
+.f_heading {
+  margin-top: 5rem;
 }
 
 .f_heading,
@@ -328,6 +372,12 @@ p {
 
   .f_grid {
     grid-template-columns: 1fr 10rem 1fr 10rem 1fr;
+  }
+
+  .result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .details {
