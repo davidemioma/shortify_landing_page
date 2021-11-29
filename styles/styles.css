@@ -301,6 +301,11 @@ p {
   outline: 0;
 }
 
+.error {
+  display: none;
+  color: red;
+}
+
 .f_heading {
   margin-top: 5rem;
 }
